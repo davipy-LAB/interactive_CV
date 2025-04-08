@@ -140,3 +140,63 @@ body {
       width: 100%;
     }
   }
+
+/* Adicionado: hover nos cards */
+.card-biography:hover,
+.card-projects:hover,
+.KeyStrengths:hover,
+.social-media:hover,
+.Objectives:hover,
+.Contact:hover,
+.header:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Hover na sidebar */
+.sidebar:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover nos títulos */
+h2:hover, h1:hover {
+  color: #66c2ff;
+  transition: color 0.3s ease;
+}
+
+/* Links */
+a {
+  color: #66c2ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #89e0ff;
+}
+
+/* Ícones (como GitHub e LinkedIn) */
+.fab:hover {
+  color: #89e0ff;
+  transition: color 0.3s ease;
+}
+
+/* List items hover (skills e strengths) */
+.skills ul li:hover,
+.KeyStrengths ul li:hover,
+.social-media ul li:hover {
+  color: #89e0ff;
+  cursor: default;
+  transition: color 0.3s ease;
+}
+
+/* Botão ou item clicável genérico (se quiser usar no futuro) */
+button:hover, .btn:hover {
+  background-color: #66c2ff;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
