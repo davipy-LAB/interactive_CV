@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,94 +14,205 @@
 <body>
   <div class="sidebar">
     <header>
-      <h1>My CV</h1>
+      <h1 data-i18n="header.mycv">My CV</h1>
+      <select id="languageSelect">
+        <option value="en">English</option>
+        <option value="pt">Português</option>
+        <option value="es">Español</option>
+      </select>
     </header>
     <main>
       <section class="personal-info">
-        <h2>Personal Information</h2>
-        <p>Name: Davi Dias de Souza</p>
-        <p>Age: 16</p>
-        <p>Location: Rio De Janeiro, Brazil</p>
+        <h2 data-i18n="personal.title">Personal Information</h2>
+        <p data-i18n="personal.name">Name: Davi Dias de Souza</p>
+        <p data-i18n="personal.age">Age: 16</p>
+        <p data-i18n="personal.location">Location: Rio De Janeiro, Brazil</p>
       </section>
       <section class="skills">
-        <h2>Skills</h2>
+        <h2 data-i18n="skills.title">Skills</h2>
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Python</li>
+          <li data-i18n="skills.html">HTML</li>
+          <li data-i18n="skills.css">CSS</li>
+          <li data-i18n="skills.js">JavaScript</li>
+          <li data-i18n="skills.python">Python</li>
         </ul>
       </section>
       <section class="experience">
-        <h2>Experience</h2>
-        <p>I've been studying development for 4 years, and actually I'm a student of Web development.</p>
-        <p>I have a project called "Chatboy", a chatbot completely made by me, integrated with AI.</p>
+        <h2 data-i18n="experience.title">Experience</h2>
+        <p data-i18n="experience.text1">I've been studying development for 4 years, and actually I'm a student of Web development.</p>
+        <p data-i18n="experience.text2">I have a project called "Chatboy", a chatbot completely made by me, integrated with AI.</p>
         <ul>
           <li><a href="https://github.com/davipy-LAB/ChatGuy/blob/chatboy1.0.5/chat_bot/app.py" target="_blank">ChatBoy</a></li>
         </ul>
       </section>
     </main>
   </div>
-<div class="geral">
-  <div class="header"">
-    <h1>Fuelled by curiosity, driven by code.</h1>
-    <p1>Hello there!
-        I'm Davi, a 16-year-old passionate about Web Development and Machine Learning, ready to embark on an exciting journey through tech!
-        
-        Curious to explore my interactive CV?
-        Great! I’ve prepared a few cards for you — feel free to dive into my world and discover what I’ve been building.</p1>
-  </div>
-  <section class="cards">
-    <div class="card-biography">
-        <h2>Biography</h2>
-        <p>It all started when I was 12 and got my first computer. Out of pure curiosity, I began exploring the world of programming.
-            I was instantly fascinated by automation and the idea of creating my own tools and software.
-            I started with Python, diving deep into logic and problem-solving.
-            Four years later, I discovered Web Development — and I was hooked.
-            The idea of building websites and applications that people around the world could use truly amazed me.
-        </p>
+  <div class="geral">
+    <div class="header">
+      <h1 data-i18n="header.title">Fuelled by curiosity, driven by code.</h1>
+      <p data-i18n="header.intro">Hello there! I'm Davi, a 16-year-old passionate about Web Development and Machine Learning...</p>
     </div>
-    <div class="card-projects">
-        <h2>Projects</h2>
-        <p>I've been working on a few projects that I'm really proud of. One of them is a chatbot called "Chatboy".
-            It's a fun little project that showcases my skills in Python and AI integration.
-            You can check it out on my GitHub!</p>
+    <section class="cards">
+      <div class="card-biography">
+        <h2 data-i18n="bio.title">Biography</h2>
+        <p data-i18n="bio.text">It all started when I was 12 and got my first computer...</p>
+      </div>
+      <div class="card-projects">
+        <h2 data-i18n="projects.title">Projects</h2>
+        <p data-i18n="projects.text">I've been working on a few projects that I'm really proud of...</p>
         <ul>
-            <li><a href="https://github.com/davipy-LAB/ChatGuy/blob/chatboy1.0.5/chat_bot/app.py" target="_blank">ChatBoy</a></li>
+          <li><a href="https://github.com/davipy-LAB/ChatGuy/blob/chatboy1.0.5/chat_bot/app.py" target="_blank">ChatBoy</a></li>
         </ul>
-    </div>
-    <div class="KeyStrengths">
-        <h2>Key Strengths</h2>
-        <p>My key strengths are:</p>
+      </div>
+      <div class="KeyStrengths">
+        <h2 data-i18n="strengths.title">Key Strengths</h2>
+        <p data-i18n="strengths.intro">My key strengths are:</p>
         <ul>
-            <li>Problem-solving</li>
-            <li>Logical thinking</li>
-            <li>Attention to detail</li>
-            <li>Communication</li>
-            <li>Versatility</li>
-            <li>Consistency & Growth-Mindset</li>
+          <li data-i18n="strengths.problem">Problem-solving</li>
+          <li data-i18n="strengths.logic">Logical thinking</li>
+          <li data-i18n="strengths.detail">Attention to detail</li>
+          <li data-i18n="strengths.communication">Communication</li>
+          <li data-i18n="strengths.versatility">Versatility</li>
+          <li data-i18n="strengths.growth">Consistency & Growth-Mindset</li>
         </ul>
-    </div>
-    <div class="geral_right">
-    <div class="social-media">
-        <h2>Social Media</h2>
-        <ul>
+      </div>
+      <div class="geral_right">
+        <div class="social-media">
+          <h2 data-i18n="social.title">Social Media</h2>
+          <ul>
             <li><a href="https://github.com/davipy-LAB" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/davi-dias-de-souza-5337872a6/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-        </ul>
-    </div>
-    <div class="Objectives">
-        <h2>Objectives</h2>
-        <p>I aim to build a solid career as a Fullstack Developer with a strong focus on Web Development and Machine Learning. My goal is to create innovative and impactful digital solutions, constantly improving my skills through personal projects and real-world experience. I want to turn my passion for technology into meaningful contributions — and ultimately, make a living doing what I love.</p> 
-    </div>
-    <div class="Contact">
-        <h2>Contact</h2>
-        <p>For any inquiries or collaboration opportunities, please reach out to me on GitHub or LinkedIn. Let's connect and explore the possibilities together!</p>
-    </div>
-    </div>
-  </section>
-</div>
-  <!-- Scripts devem estar no final para garantir que o DOM carregue primeiro -->
-  <script src="script.js"></script>
+          </ul>
+        </div>
+        <div class="Objectives">
+          <h2 data-i18n="objectives.title">Objectives</h2>
+          <p data-i18n="objectives.text">I aim to build a solid career as a Fullstack Developer...</p>
+        </div>
+        <div class="Contact">
+          <h2 data-i18n="contact.title">Contact</h2>
+          <p data-i18n="contact.text">For any inquiries or collaboration opportunities...</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    const translations = {
+      en: {
+        "header.mycv": "My CV",
+        "personal.title": "Personal Information",
+        "personal.name": "Name: Davi Dias de Souza",
+        "personal.age": "Age: 16",
+        "personal.location": "Location: Rio De Janeiro, Brazil",
+        "skills.title": "Skills",
+        "skills.html": "HTML",
+        "skills.css": "CSS",
+        "skills.js": "JavaScript",
+        "skills.python": "Python",
+        "experience.title": "Experience",
+        "experience.text1": "I've been studying development for 4 years, and actually I'm a student of Web development.",
+        "experience.text2": "I have a project called \"Chatboy\", a chatbot completely made by me, integrated with AI.",
+        "header.title": "Fuelled by curiosity, driven by code.",
+        "header.intro": "Hello there! I'm Davi, a 16-year-old passionate about Web Development and Machine Learning...",
+        "bio.title": "Biography",
+        "bio.text": "It all started when I was 12 and got my first computer...",
+        "projects.title": "Projects",
+        "projects.text": "I've been working on a few projects that I'm really proud of...",
+        "strengths.title": "Key Strengths",
+        "strengths.intro": "My key strengths are:",
+        "strengths.problem": "Problem-solving",
+        "strengths.logic": "Logical thinking",
+        "strengths.detail": "Attention to detail",
+        "strengths.communication": "Communication",
+        "strengths.versatility": "Versatility",
+        "strengths.growth": "Consistency & Growth-Mindset",
+        "social.title": "Social Media",
+        "objectives.title": "Objectives",
+        "objectives.text": "I aim to build a solid career as a Fullstack Developer...",
+        "contact.title": "Contact",
+        "contact.text": "For any inquiries or collaboration opportunities..."
+      },
+      pt: {
+        "header.mycv": "Meu Currículo",
+        "personal.title": "Informações Pessoais",
+        "personal.name": "Nome: Davi Dias de Souza",
+        "personal.age": "Idade: 16",
+        "personal.location": "Localização: Rio de Janeiro, Brasil",
+        "skills.title": "Habilidades",
+        "skills.html": "HTML",
+        "skills.css": "CSS",
+        "skills.js": "JavaScript",
+        "skills.python": "Python",
+        "experience.title": "Experiência",
+        "experience.text1": "Estudo desenvolvimento há 4 anos e atualmente sou estudante de desenvolvimento web.",
+        "experience.text2": "Tenho um projeto chamado \"Chatboy\", um chatbot feito por mim com integração de IA.",
+        "header.title": "Movido pela curiosidade, impulsionado por código.",
+        "header.intro": "Olá! Eu sou o Davi, um jovem de 16 anos apaixonado por Desenvolvimento Web e Machine Learning...",
+        "bio.title": "Biografia",
+        "bio.text": "Tudo começou quando eu tinha 12 anos e ganhei meu primeiro computador...",
+        "projects.title": "Projetos",
+        "projects.text": "Tenho trabalhado em alguns projetos dos quais me orgulho muito...",
+        "strengths.title": "Pontos Fortes",
+        "strengths.intro": "Meus principais pontos fortes são:",
+        "strengths.problem": "Resolução de problemas",
+        "strengths.logic": "Raciocínio lógico",
+        "strengths.detail": "Atenção aos detalhes",
+        "strengths.communication": "Comunicação",
+        "strengths.versatility": "Versatilidade",
+        "strengths.growth": "Consistência e mentalidade de crescimento",
+        "social.title": "Redes Sociais",
+        "objectives.title": "Objetivos",
+        "objectives.text": "Quero construir uma carreira sólida como desenvolvedor fullstack...",
+        "contact.title": "Contato",
+        "contact.text": "Para dúvidas ou oportunidades de colaboração..."
+      },
+      es: {
+        "header.mycv": "Mi CV",
+        "personal.title": "Información Personal",
+        "personal.name": "Nombre: Davi Dias de Souza",
+        "personal.age": "Edad: 16",
+        "personal.location": "Ubicación: Río de Janeiro, Brasil",
+        "skills.title": "Habilidades",
+        "skills.html": "HTML",
+        "skills.css": "CSS",
+        "skills.js": "JavaScript",
+        "skills.python": "Python",
+        "experience.title": "Experiencia",
+        "experience.text1": "He estado estudiando desarrollo durante 4 años y actualmente soy estudiante de desarrollo web.",
+        "experience.text2": "Tengo un proyecto llamado \"Chatboy\", un chatbot completamente hecho por mí e integrado con IA.",
+        "header.title": "Impulsado por la curiosidad, motivado por el código.",
+        "header.intro": "¡Hola! Soy Davi, un joven de 16 años apasionado por el desarrollo web y el aprendizaje automático...",
+        "bio.title": "Biografía",
+        "bio.text": "Todo comenzó cuando tenía 12 años y recibí mi primera computadora...",
+        "projects.title": "Proyectos",
+        "projects.text": "He estado trabajando en algunos proyectos de los que estoy realmente orgulloso...",
+        "strengths.title": "Fortalezas Clave",
+        "strengths.intro": "Mis principales fortalezas son:",
+        "strengths.problem": "Resolución de problemas",
+        "strengths.logic": "Pensamiento lógico",
+        "strengths.detail": "Atención al detalle",
+        "strengths.communication": "Comunicación",
+        "strengths.versatility": "Versatilidad",
+        "strengths.growth": "Constancia y mentalidad de crecimiento",
+        "social.title": "Redes Sociales",
+        "objectives.title": "Objetivos",
+        "objectives.text": "Quiero construir una carrera sólida como desarrollador fullstack...",
+        "contact.title": "Contacto",
+        "contact.text": "Para consultas u oportunidades de colaboración..."
+      }
+    };function changeLanguage(lang) {
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[lang] && translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  });
+}
+
+document.getElementById("languageSelect").addEventListener("change", (e) => {
+  changeLanguage(e.target.value);
+});
+
+  </script>
 </body>
 </html>
