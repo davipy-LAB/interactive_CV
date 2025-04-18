@@ -12,6 +12,7 @@
   />
 </head>
 <body>
+  <div id="tsparticles"></div>
   <div class="sidebar">
     <header>
       <h1 data-i18n="header.mycv">My CV</h1>
@@ -35,6 +36,17 @@
           <li data-i18n="skills.css">CSS</li>
           <li data-i18n="skills.js">JavaScript</li>
           <li data-i18n="skills.python">Python</li>
+          <li data-i18n="skills.react-js">React.Js</li>
+          <li data-i18n="skills.node-js">Node.js</li>
+          <li data-i18n="skills.flask">Flask</li>
+          <li data-i18n="skills.express">Express</li>
+          <li data-i18n="skills.JSON">Manipulating JSON</li>
+          <li data-i18n="skills.git">Git</li>
+          <li data-i18n="skills.github">GitHub</li>
+          <li data-i18n="skills.machine-learning">Machine Learning</li>
+          <li data-i18n="skills.API">Knowlegde of API</li>
+          <li data-i18n="skills.UI">UI</li>
+          <li data-i18n="skills.UX">UX</li>
         </ul>
       </section>
       <section class="experience">
@@ -111,6 +123,17 @@
         "skills.css": "CSS",
         "skills.js": "JavaScript",
         "skills.python": "Python",
+        "skills.react-js": "React.Js",
+        "skills.node-js": "Node.js",
+        "skills.flask": "Flask",
+        "skills.express": "Express",
+        "skills.JSON": "JSON Manipulating",
+        "skills.git": "Git",
+        "skills.github": "GitHub",
+        "skills.machine-learning": "Machine Learning",
+        "skills.API": "Knowlegde of API",
+        "skills.UI": "UI",
+        "skills.UX": "UX",
         "experience.title": "Experience",
         "experience.text1": "I've been studying development for 4 years, and actually I'm a student of Web development.",
         "experience.text2": "I have a project called \"Chatboy\", a chatbot completely made by me, integrated with AI.",
@@ -145,6 +168,17 @@
         "skills.css": "CSS",
         "skills.js": "JavaScript",
         "skills.python": "Python",
+        "skills.react-js": "React.Js",
+        "skills.node-js": "Node.js",
+        "skills.flask": "Flask",
+        "skills.express": "Express", 
+        "skills.JSON": "Manipulação de JSON",
+        "skills.git": "Git",
+        "skills.github": "GitHub",
+        "skills.machine-learning": "Machine Learning",
+        "skills.API": "Conhecimento de API",
+        "skills.UI": "UI",
+        "skills.UX": "UX",
         "experience.title": "Experiência",
         "experience.text1": "Estudo desenvolvimento há 4 anos e atualmente sou estudante de desenvolvimento web.",
         "experience.text2": "Tenho um projeto chamado \"Chatboy\", um chatbot feito por mim com integração de IA.",
@@ -179,6 +213,17 @@
         "skills.css": "CSS",
         "skills.js": "JavaScript",
         "skills.python": "Python",
+        "skills.react-js": "React.Js",
+        "skills.node-js": "Node.js",
+        "skills.flask": "Flask",
+        "skills.express": "Express", 
+        "skills.JSON": "Manipulación de JSON",
+        "skills.git": "Git",
+        "skills.github": "GitHub",
+        "skills.machine-learning": "Machine Learning",
+        "skills.API": "Conocimiento de API",
+        "skills.UI": "UI",
+        "skills.UX": "UX",
         "experience.title": "Experiencia",
         "experience.text1": "He estado estudiando desarrollo durante 4 años y actualmente soy estudiante de desarrollo web.",
         "experience.text2": "Tengo un proyecto llamado \"Chatboy\", un chatbot completamente hecho por mí e integrado con IA.",
@@ -211,11 +256,43 @@
     }
   });
 }
-
 document.getElementById("languageSelect").addEventListener("change", (e) => {
   changeLanguage(e.target.value);
 });
 
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      particles: {
+        number: { value: 80 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        move: { enable: true, speed: 1 },
+        links: {
+          enable: true,
+          color: "#ffffff",
+          distance: 150,
+          opacity: 0.4,
+          width: 1
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { quantity: 4 }
+        }
+      },
+      background: {
+        color: "#0d1117" /* ou a cor que tu quiser */
+      }
+    });
+  </script>  
 </body>
 </html>

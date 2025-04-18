@@ -1,172 +1,114 @@
-/* Estilo global */
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 body {
-    background: linear-gradient(135deg, #635b62, #3d3d55);
-    color: #f0f0f0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  /* Sidebar lateral */
-  .sidebar {
-    background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    width: 260px;
-    padding: 20px;
-    height: 100vh;
-    overflow-y: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  }
-  
-  .sidebar h1 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  /* Área principal */
-  .geral {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 20px;
-  }
-  
-  /* Header do CV */
-  .header {
-    background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  }
-  
-  .header h1 {
-    margin-top: 0;
-  }
-  
-  .header p1 {
-    display: block;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #ccc;
-  }
-  
-  /* Container das colunas */
-  .cards {
-    display: flex;
-    gap: 40px;
-  }
-  
-  /* Coluna da esquerda */
-  .cards > div {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  /* Coluna da direita */
-  .geral_right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  /* Estilo dos cards */
-  .card-biography,
-  .card-projects,
-  .KeyStrengths,
-  .social-media,
-  .Objectives,
-  .Contact {
-    background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
-  }
-  
-  .card-biography h2,
-  .card-projects h2,
-  .KeyStrengths h2,
-  .social-media h2,
-  .Objectives h2,
-  .Contact h2 {
-    margin-top: 0;
-    color: #fff;
-  }
-  
-  /* Links */
-  a {
-    color: #66c2ff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Ícones das redes */
-  .fab {
-    margin-right: 8px;
-  }
-  
-  /* Ajustes na seção de habilidades */
-  .skills ul, .KeyStrengths ul, .social-media ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-
-  @media (max-width: 768px) {
-    body {
-      flex-direction: column;
-    }
-  
-    .cards {
-      flex-direction: column;
-    }
-  
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-  
-    .geral_right, .cards > div {
-      width: 100%;
-    }
-  }
-
-/* Adicionado: hover nos cards */
-.card-biography:hover,
-.card-projects:hover,
-.KeyStrengths:hover,
-.social-media:hover,
-.Objectives:hover,
-.Contact:hover,
-.header:hover {
-  transform: scale(1.02);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-/* Hover na sidebar */
-.sidebar:hover {
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-  transition: box-shadow 0.3s ease;
+.sidebar {
+  background-color: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(4px);
+  width: 260px;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  animation: fadeInLeft 0.5s forwards;
+  animation-delay: 0.1s;
 }
 
-/* Hover nos títulos */
-h2:hover, h1:hover {
-  color: #66c2ff;
-  transition: color 0.3s ease;
+.sidebar h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-/* Links */
+.geral {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  background-color: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  animation: fadeInDown 0.5s forwards;
+  animation-delay: 0.1s;
+}
+
+.header h1 {
+  margin-top: 0;
+}
+
+.header p1 {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.cards {
+  display: flex;
+  gap: 40px;
+}
+
+.cards > div,
+.geral_right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-biography,
+.card-projects,
+.KeyStrengths,
+.social-media,
+.Objectives,
+.Contact {
+  background-color: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(4px);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.card-biography { animation-delay: 0.1s; }
+.card-projects { animation-delay: 0.2s; }
+.KeyStrengths { animation-delay: 0.3s; }
+.social-media { animation-delay: 0.4s; }
+.Objectives { animation-delay: 0.5s; }
+.Contact { animation-delay: 0.6s; }
+
+.card-biography h2,
+.card-projects h2,
+.KeyStrengths h2,
+.social-media h2,
+.Objectives h2,
+.Contact h2 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
 a {
   color: #66c2ff;
   text-decoration: none;
@@ -178,13 +120,62 @@ a:hover {
   color: #89e0ff;
 }
 
-/* Ícones (como GitHub e LinkedIn) */
+.fab {
+  margin-right: 8px;
+}
+
+.skills ul, .KeyStrengths ul, .social-media ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .geral_right, .cards > div {
+    width: 100%;
+  }
+}
+
+.card-biography:hover,
+.card-projects:hover,
+.KeyStrengths:hover,
+.social-media:hover,
+.Objectives:hover,
+.Contact:hover,
+.header:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+}
+
+.sidebar:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+h2:hover, h1:hover {
+  color: #66c2ff;
+  transition: color 0.3s ease;
+}
+
 .fab:hover {
   color: #89e0ff;
   transition: color 0.3s ease;
 }
 
-/* List items hover (skills e strengths) */
 .skills ul li:hover,
 .KeyStrengths ul li:hover,
 .social-media ul li:hover {
@@ -193,7 +184,6 @@ a:hover {
   transition: color 0.3s ease;
 }
 
-/* Botão ou item clicável genérico (se quiser usar no futuro) */
 button:hover, .btn:hover {
   background-color: #66c2ff;
   color: #1a1a1a;
@@ -222,7 +212,7 @@ button:hover, .btn:hover {
 #languageSelect {
   padding: 8px 16px;
   font-size: 16px;
-  background-color: #5259be;
+  background-color: #3038a0;
   color: white;
   border: none;
   border-radius: 8px;
@@ -232,35 +222,20 @@ button:hover, .btn:hover {
 }
 
 #languageSelect:hover {
-  padding: 8px 16px;
-  font-size: 16px;
-  background-color: #454a91;
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  appearance: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  background-color: #232969;
+  box-shadow: 0 0 10px rgba(102, 194, 255, 0.2);
 }
 
-.Minha-Foto img{
+.Minha-Foto img {
   border-radius: 30%;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
   transition: box-shadow 0.3s ease;
   width: 300px;
   height: 400px;
 }
 
 .Minha-Foto img:hover {
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
-  transition: box-shadow 0.3s ease;
-}
-/* Adicionado: animação de entrada para os cards */
-.card-biography, .card-projects, .KeyStrengths, .social-media, .Objectives, .Contact, .header {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.5s forwards;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
 }
 
 @keyframes fadeInUp {
@@ -270,51 +245,11 @@ button:hover, .btn:hover {
   }
 }
 
-/* Adicionado: animação de entrada para os cards com delay */
-.card-biography {
-  animation-delay: 0.1s;
-}
-
-.card-projects {
-  animation-delay: 0.2s;
-}
-.KeyStrengths {
-  animation-delay: 0.3s;
-}
-.social-media {
-  animation-delay: 0.4s;
-}
-.Objectives {
-  animation-delay: 0.5s;
-}
-.Contact {
-  animation-delay: 0.6s;
-}
-.header {
-  animation-delay: 0.7s;
-}
-/* Adicionado: animação de entrada para a sidebar */
-.sidebar {
-  opacity: 0;
-  transform: translateX(-20px);
-  animation: fadeInLeft 0.5s forwards;
-}
-
 @keyframes fadeInLeft {
   to {
     opacity: 1;
     transform: translateX(0);
   }
-}
-/* Adicionado: animação de entrada para a sidebar com delay */
-.sidebar {
-  animation-delay: 0.1s;
-}
-/* Adicionado: animação de entrada para o header */
-.header {
-  opacity: 0;
-  transform: translateY(-20px);
-  animation: fadeInDown 0.5s forwards;
 }
 
 @keyframes fadeInDown {
@@ -322,8 +257,4 @@ button:hover, .btn:hover {
     opacity: 1;
     transform: translateY(0);
   }
-}
-/* Adicionado: animação de entrada para o header com delay */
-.header {
-  animation-delay: 0.1s;
 }
