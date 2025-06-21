@@ -1,3 +1,4 @@
+[ENG - TEXT]
 # 🌐 My Personal Portfolio
 
 This is my online portfolio, built using HTML, CSS, and a modern aesthetic with blur effects, shadows, and gradients. Here you’ll find my biography, projects, skills, goals, and contact information.
@@ -26,8 +27,8 @@ You can find me through the social media links listed on the website or reach ou
 
 Made with 💻 and passion.
 markdown
-Copiar
-Editar
+
+[PT - TEXT]
 # 🌐 Meu Portfólio Pessoal
 
 Este é o meu portfólio online, criado com HTML, CSS e um visual moderno com efeitos de blur, sombras e gradientes. Aqui você encontrará minha biografia, projetos, habilidades, objetivos e formas de contato.
